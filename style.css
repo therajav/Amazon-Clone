@@ -29,7 +29,8 @@ nav {
     display: flex;
     align-items: center;
 }
-.nav-logo a span{
+
+.nav-logo a span {
     padding-bottom: 8px;
 }
 
@@ -78,4 +79,29 @@ nav {
     padding: 8px;
     background-color: #ffd64f;
     border-radius: 0 4px 4px 0;
+}
+
+.nav-lang {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    font-weight: 600;
+    margin-left: 15px;
+}
+
+.nav-signin {
+    display: flex;
+    align-items: end;
+    gap: 5px;
+    font-size: 13px;
+    margin-left: 15px;
+}
+
+.nav-signin img {
+    margin-bottom: 5px;
+}
+
+.nav-orders {
+    font-size: 13px;
+    margin-left: 15px;
 }
