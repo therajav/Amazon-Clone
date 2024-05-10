@@ -25,6 +25,14 @@ nav {
     color: #ffffff;
 }
 
+.nav-logo a {
+    display: flex;
+    align-items: center;
+}
+.nav-logo a span{
+    padding-bottom: 8px;
+}
+
 .nav-location {
     display: flex;
     align-items: end;
