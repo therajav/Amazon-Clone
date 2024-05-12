@@ -105,3 +105,27 @@ nav {
     font-size: 13px;
     margin-left: 15px;
 }
+
+.nav-cart {
+    display: flex;
+    align-items: end;
+    gap: -5px;
+    margin-left: 15px;
+}
+
+.nav-cart img {
+    filter: invert();
+}
+
+.nav-cart-icon {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex-direction: column-reverse;
+}
+
+.nav-cart-icon #cart-count {
+    margin: 0 0 -10px 5px;
+    color: #f08804;
+    font-weight: 600;
+}
