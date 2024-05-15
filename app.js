@@ -9,6 +9,7 @@ function changeSlide() {
         imgs[i].style.display = 'none';
     }
     imgs[n].style.display = 'block';
+
 }
 changeSlide();
 prevButton.addEventListener('click', (e) => {
@@ -18,6 +19,7 @@ prevButton.addEventListener('click', (e) => {
         n = imgs.length - 1;
     }
     changeSlide()
+
 })
 nextButton.addEventListener('click', (e) => {
     if (n < imgs.length - 1) {
@@ -27,3 +29,11 @@ nextButton.addEventListener('click', (e) => {
     }
     changeSlide()
 })
+
+const scrollContainer = document.querySelectorAll('.products');
+for (const item of scrollContainer) {
+    item.addEventListener('wheel', (e) => {
+        e.preventDefault();
+        item.scrollLeft += e.deltaX;
+    })
+}
