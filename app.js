@@ -29,11 +29,11 @@ nextButton.addEventListener('click', (e) => {
     }
     changeSlide()
 })
-
-const scrollContainer = document.querySelectorAll('.products');
-for (const item of scrollContainer) {
-    item.addEventListener('wheel', (e) => {
-        e.preventDefault();
-        item.scrollLeft += e.deltaX;
-    })
-}
+// code for horizontal scroll product card 
+// const scrollContainer = document.querySelectorAll('.products');
+// for (const item of scrollContainer) {
+//     item.addEventListener('wheel', (e) => {
+//         e.preventDefault();
+//         item.scrollLeft += e.deltaX;
+//     })
+// }
